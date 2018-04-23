@@ -1,10 +1,16 @@
 For Assignment here is a possible template to start from...
 
-Tutorials:	http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html
-Compile:	gcc -pthread -o Assignment_1 Assignment_1.c
-pthread_create:	http://man7.org/linux/man-pages/man3/pthread_create.3.html
-Sched Policies:	http://man7.org/linux/man-pages/man7/sched.7.html
+Compile:		gcc -pthread -g -o Assignment_1 Assignment_1.c
 
+Tutorials:		http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html
+
+man7
+pthread_create:		http://man7.org/linux/man-pages/man3/pthread_create.3.html
+Sched Policies:		http://man7.org/linux/man-pages/man7/sched.7.html
+Mutex functions:	http://man7.org/linux/man-pages/man3/pthread_mutex_lock.3p.html
+clock_gettime:		http://man7.org/linux/man-pages/man2/clock_gettime.2.html
+pthread_cond_wait:	http://man7.org/linux/man-pages/man3/pthread_cond_timedwait.3p.html
+pthread_cond_signal:	http://man7.org/linux/man-pages/man3/pthread_cond_signal.3p.html
 
 ========================================================================================================================================================
 

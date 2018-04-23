@@ -31,22 +31,26 @@ void *task();
 
 int main(int argc, char *argv[])
 {
-	pthread_t thread1;
-	
-	const char *message1 = "Thread1";
-	if(pthread_create( &thread1, NULL, task, NULL))
+	pthread_t threads[MAX_THREAD_COUNT+1];
+	ThreadArgs args[MAX_THREAD_COUNT+1];
+	for( int i=0; i<sizeof(threads)/sizeof(threads[0]); i++)
 	{
-		printf("ERROR creating thread \n");
-		exit(0);
+		if(pthread_create( &threads[i], NULL, task, NULL))
+		{
+			printf("ERROR creating thread \n");
+			exit(EXIT_FAILURE);
+		}
+		args[i].threadId = threads[i];
 	}
-	pthread_join( thread1, NULL );
+	//pthread_join( threads[0], NULL );
 }
 
 
 
 void *task()
 {
-	unsigned int j;
-	while(j<INT_MAX)
+	unsigned int j=1;
+	while(j)
 		j++;
+	printf("Hi\n");
 }
