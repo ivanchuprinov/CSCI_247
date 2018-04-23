@@ -1,6 +1,10 @@
 For Assignment here is a possible template to start from...
 
-http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html
+Tutorials:	http://www.yolinux.com/TUTORIALS/LinuxTutorialPosixThreads.html
+Compile:	gcc -pthread -o Assignment_1 Assignment_1.c
+pthread_create:	http://man7.org/linux/man-pages/man3/pthread_create.3.html
+Sched Policies:	http://man7.org/linux/man-pages/man7/sched.7.html
+
 
 ========================================================================================================================================================
 
